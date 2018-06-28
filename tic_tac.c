@@ -30,10 +30,26 @@ void randomNum(){
 	//put x in element for starting game
 	m[i][j]="x";
 }
+//printting matrix 
+void printmatrix(){
+	for (int i = 0; i < 5; ++i)
+	{
+		for (int j = 0; j < 5; ++j)
+		{
+			//print all of elements
+			printf("%s",m[i][j] );
+		}
+		
+		printf("\n");
 
+	}
+	
+}
 int main(int argc, char const *argv[])
 {
 	fill();
+	randomNum();
+	printmatrix();
 	return 0;
 
 }
