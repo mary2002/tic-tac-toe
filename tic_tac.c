@@ -19,9 +19,16 @@ void fill(){
 			else
 				m[i][j]=" ";
 		}
-	}
-	
-	
+	}	
+}
+//start game by computer
+void randomNum(){
+	//make two even random number between 0 and 4 for index of element
+	srand(time(0));
+	int i=2*(rand()%3);
+	int j=2*(rand()%3);
+	//put x in element for starting game
+	m[i][j]="x";
 }
 
 int main(int argc, char const *argv[])
